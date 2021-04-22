@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="alert alert-success" role="alert">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Rem, suscipit dolorum eum hic laudantium veniam 
+        deserunt sed quisquam pariatur commodi natus earum?
+        In nesciunt distinctio similique nostrum quo officiis quia!
+    </div>
+
+<div class="row">
+        <div class="col">
+            <div class="alert alert-secondary">
+                Ericka Alcantara
+            </div>
+        </div>    
+        
+        <div class="col">
+            <div class="alert alert-primary">
+                Ericka Alcantara
+            </div>
+        </div>    
+</div>
+    
+<div class="row">
+    <div class="col-sm">
+        <div class="alert alert-danger">
+            error
+        </div>
+    </div>
+   
+    <div class="col-sm">
+        <div class="alert alert-warning">
+            alerta!
+        </div>
+    </div>   
+</div>
+
+    <div class="alert alert-info">
+        information!
+        <a href="#">Facebook</a>
+    </div>
+<hr>
+    <div class="alert alert-dark">
+        <h4>titulo principal</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, ex, assumenda accusamus at cumque omnis amet alias eius minus distinctio asperiores numquam itaque labore saepe tempore blanditiis nobis soluta. Error!</p>
+         <hr>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minus eos ipsam neque voluptatum quo accusamus aut, blanditiis culpa velit tenetur, laboriosam maxime iusto fugiat ipsum ullam eaque, deserunt molestias.</p>
+    </div>
+<hr>
+
+    <!-- role="alert" é mais para semantica -->
+    <!-- &times; é um X  -->
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+       Praesentium harum debitis rerum, nesciunt, officiis laboriosam
+       distinctio excepturi aspernatur tempora suscipit ducimus eos 
+       adipisci aperiam laudantium modi. Soluta repudiandae laborum velit.
+       <button class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+        <button id="btn-close-all" type="button">Fechar todos os alertas</button>
+</div>
+
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+
+    $(() => {
+
+    $('#btn-close-all').on('click', e => {
+            
+            $('.alert').alert('close');
+
+        });
+    });
+
+</script>
+
+
+
+</body>
+</html>

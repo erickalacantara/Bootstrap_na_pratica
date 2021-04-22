@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-validation</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+ <div class="custom-control custom-checkbox">
+             <input type="checkbox" name="gender" id="gender-m" value="M" class="custom-control-input">
+             <label for="gender-m" class="custom-control-label">Aceito os termos de uso</label>
+             
+         </div>
+</div>
+
+
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+
+    //  $(() => {
+
+
+    //     $('form').on('submit', e => {
+
+    //         const form = e.target;
+
+    //      if(form.checkValidity() === false){
+
+    //             e.preventDefault();
+    //             e.stopPropagation();
+
+
+
+    //      }
+
+    //     });
+
+    //  });
+
+
+    window.addEventListener('load', e => {
+
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', es =>{
+
+            if (form.checkValidity() === false) {
+                e.preventDefault();
+                e.stopPropagation();
+
+
+            }
+
+            form.classList.add('was-validated');
+
+        });
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

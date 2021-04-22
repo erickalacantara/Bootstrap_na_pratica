@@ -1,0 +1,10 @@
+.container{
+    padding: 2rem;
+}
+.row > .col,
+.row > [class^=col-]{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: thistle;
+    border: 1px solid black;
+}
